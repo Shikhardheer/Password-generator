@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Password Generator</h1>
+        <div class="display_container">
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+            <button data-Copy>
+                <span data-copyMsg></span>
+                <img src="" alt="copy" width="23" height="23">
+            </button>
+        </div>
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+            <input type="range" min="1" max="20" value="10" step="1" data-lengthSlider>
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include Uppercase letters</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="uppercase">Include Lowercase letters</label>
+            </div>
+            <div>
+                <input type="checkbox" id="number">
+                <label for="uppercase">Include Number</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symbols">
+                <label for="uppercase">Include Symbols</label>
+            </div>
+            <div class="strength-container">
+                <p>Strength</p>
+                <div data-Indicator></div>
+            </div>
+            <button class="generate-button">Generate Password</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+/*
+    This is mackbook with some new features includes 
+    
+*/
